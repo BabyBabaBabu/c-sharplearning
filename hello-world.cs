@@ -4,10 +4,12 @@ namespace HelloWorld
 {
 class HelloWorld
 {
-    static void Main()
+    static int Main()
     {
         // This line prints the famous "Hello World"
         Console.WriteLine("Hello World!");
+
+        return 0;
     }
 }
 
