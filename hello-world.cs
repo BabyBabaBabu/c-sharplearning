@@ -46,29 +46,40 @@ namespace HelloWorld
 
         static int Main(string[] args)
         {
-
-            if (args.Length == 0)
-            {
-                throw new ArgumentException(Usage());
-            }
+            int num = 0;
 
             try
             {
-                int num = int.Parse(args[0]);
-                long result = Factorial(num);
-
-                if (isOutOfRange(result))
-                    Console.WriteLine("Input must be >= 0 and <= 20.");
-                else
-                    Console.WriteLine($"The Factorial of {num} is {result}.");
-
-                return 0;
+                num = int.Parse(args[0]);
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                throw new ArgumentException(Usage(), ex);
-                throw;
+                if (ex is IndexOutOfRangeException)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(Usage());
+                    return 1;
+                }
+                else if (ex is FormatException)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(Usage());
+                    return 1;
+                }
+                else
+                {
+                    throw new ApplicationException("An error occurred - ", ex);
+                }
             }
+
+            long result = Factorial(num);
+
+            if (isOutOfRange(result))
+                Console.WriteLine("Input must be >= 0 and <= 20.");
+            else
+                Console.WriteLine($"The Factorial of {num} is {result}.");
+
+            return 0;
         }
     }
 
