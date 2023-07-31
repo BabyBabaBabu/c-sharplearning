@@ -1,10 +1,10 @@
 using System;
 
-namespace HelloWorld
+namespace FirstNamespace
 {
-    class HelloWorld
+    class Greetings
     {
-        static int Main()
+        public static int Hello()
         {
             // This line prints the famous "Hello World"
             Console.WriteLine("Hello World!");
@@ -44,7 +44,7 @@ namespace HelloWorld
             return tempResult;
         }
 
-        static int Main(string[] args)
+        public static int Main(string[] args)
         {
             int num = 0;
 
