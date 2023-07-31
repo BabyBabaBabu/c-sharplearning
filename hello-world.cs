@@ -1,10 +1,10 @@
 using System;
 
-namespace HelloWorld
+namespace Greetings
 {
 class Hello
 {
-   public static int Greetings()
+   public static int HelloWorld()
     {
         // This line prints the famous "Hello World"
         Console.WriteLine("Hello World!");

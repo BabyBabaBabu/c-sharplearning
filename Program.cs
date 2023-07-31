@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, Me!");
-using HelloWorld;
+using Greetings;
 
-Hello.Greetings();
+Hello.HelloWorld();
