@@ -44,7 +44,7 @@ namespace FirstNamespace
             return tempResult;
         }
 
-        public static int Main(string[] args)
+        static int Main(string[] args)
         {
             int num = 0;
 
