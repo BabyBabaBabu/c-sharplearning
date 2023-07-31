@@ -10,5 +10,6 @@ To clone a particular branch, run the following command.
 
 ## Usage
 Make sure you have [.NET](https://dotnet.microsoft.com/en-us/download) installed.
-Switch into the directory of th branch you cloned and run the following command
+Switch into the directory of th branch you cloned and run the following command.
+
 ``` dotnet run```
