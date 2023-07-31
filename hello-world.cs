@@ -2,9 +2,9 @@ using System;
 
 namespace HelloWorld
 {
-class HelloWorld
+class Hello
 {
-    static int Main()
+   public static int Greetings()
     {
         // This line prints the famous "Hello World"
         Console.WriteLine("Hello World!");
